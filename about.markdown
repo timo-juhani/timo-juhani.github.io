@@ -1,18 +1,19 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm TJ Karjalainen. A Finnish network and security engineer. I advise, design and build novel solutions that help my customers to win on their field of business and defend their slice of the ever growing cyberspace. 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+If I'm not working on my projects, I can be found working out (early mornings most preferrably), shooting my bow, hiking, heating up a sauna or going around our house finding places to fix or improve. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+On the pages of Logs I write about ideas, experiences and experiments covering security and computer networks, but also leadership and business withing those contexts. Occasionally, I may explore cyber warfare too due to my personal interest which stems from days in the army.
 
+If you want to reach out, you can find me via email but also social media (check the contact info on homepage). 
 
-[jekyll-organization]: https://github.com/jekyll
+BR,
+
+TJ
+
+<img align="right " height="150" src="/profile.jpg">

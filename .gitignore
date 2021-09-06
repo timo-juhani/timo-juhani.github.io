@@ -5,3 +5,4 @@ _site
 vendor
 _posts/2021-09-05-welcome-to-jekyll.markdown
 midnight/
+.DS_Store
