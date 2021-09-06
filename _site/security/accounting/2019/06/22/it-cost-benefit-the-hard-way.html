@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IT Cost-Benefit Analysis - The Hard Way | Logs</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="IT Cost-Benefit Analysis - The Hard Way" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This week I had an intriguing discussion about cost-benefit analysis in the context of IT architecture development. As we planned for new capabilities on both network and security domain, I made a remark that keeping mind clear on the objectives of the analysis was difficult. That in mind, I wanted to record my conclusions lest they are forgotten." />
+<meta property="og:description" content="This week I had an intriguing discussion about cost-benefit analysis in the context of IT architecture development. As we planned for new capabilities on both network and security domain, I made a remark that keeping mind clear on the objectives of the analysis was difficult. That in mind, I wanted to record my conclusions lest they are forgotten." />
+<link rel="canonical" href="http://localhost:4000/security/accounting/2019/06/22/it-cost-benefit-the-hard-way.html" />
+<meta property="og:url" content="http://localhost:4000/security/accounting/2019/06/22/it-cost-benefit-the-hard-way.html" />
+<meta property="og:site_name" content="Logs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-22T00:00:00+03:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IT Cost-Benefit Analysis - The Hard Way" />
+<script type="application/ld+json">
+{"datePublished":"2019-06-22T00:00:00+03:00","headline":"IT Cost-Benefit Analysis - The Hard Way","url":"http://localhost:4000/security/accounting/2019/06/22/it-cost-benefit-the-hard-way.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/security/accounting/2019/06/22/it-cost-benefit-the-hard-way.html"},"description":"This week I had an intriguing discussion about cost-benefit analysis in the context of IT architecture development. As we planned for new capabilities on both network and security domain, I made a remark that keeping mind clear on the objectives of the analysis was difficult. That in mind, I wanted to record my conclusions lest they are forgotten.","@type":"BlogPosting","dateModified":"2019-06-22T00:00:00+03:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Logs" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Logs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">IT Cost-Benefit Analysis - The Hard Way</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2019-06-22T00:00:00+03:00" itemprop="datePublished">
+        Jun 22, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>This week I had an intriguing discussion about cost-benefit analysis in the context of IT architecture development. As we planned for new capabilities on both network and security domain, I made a remark that keeping mind clear on the objectives of the analysis was difficult. That in mind, I wanted to record my conclusions lest they are forgotten.</p>
+
+<p>There are few core principles that help you to keep things organized when analyzing IT features (capabilities) and security countermeasures. Both domains utilize the cost-benefit analysis to determine whether it makes sense to make an investment. Although the formula for ROI (Return on Investment) is the same for both, how to analyze the benefit is wildly different:</p>
+
+<h4 id="roi--return-benefit--investment-cost">ROI = Return (Benefit) / Investment (Cost)</h4>
+
+<p>The benefits of IT capabilities fall in two tangible categories: savings done or revenue increased. For instance, the jargon around IT automation and orchestration would fall in the savings done category as a tangible monetary benefit. That, in turn and depending on the use case, can be a percentage saving of an IT operating expense. Considering the spoken word, you are likely to recognize the following pondering: “Is there a business case for this action?”</p>
+
+<blockquote>
+  <p>Security is an expense of conducting business.</p>
+</blockquote>
+
+<p>I would argue that for security countermeasures the business case question is invalid in its traditional meaning. Security is an expense of conducting business. Without proper security the business ceases to exist - trade secrets are stolen etc. Therefore the benefit side of the formula requires a different kind of thought process.</p>
+
+<p>In the security context, the benefit is obtained by estimating how much are we likely to loss annually if an IT risk is unmanaged. Annual Loss Expectancy (€, ALE) is the term you would expect to see here. It is a compound of the following questions:</p>
+
+<ul>
+  <li>How many times a business disruptive event is likely to happen during a year? (Annual Rate of Occurance, ARO)</li>
+  <li>What is the total value of the asset, e.g. revenue generated by day? (€, Asset Value, AV)</li>
+  <li>What is the impact on the asset if it was lost, e.g., how much of the day’s revenue would vaporize due to a risk that materialized? (%, Exposure Factor, EF)</li>
+</ul>
+
+<h4 id="ale--aro-x-ef-x-av">ALE = ARO x EF x AV</h4>
+
+<p>So, instead of analyzing the costs saved or revenue added, the benefit is avoiding the loss from business disruption caused by IT systems.</p>
+
+<p>To conclude, although analyzing ROI’s costs part is pretty much the same TCO consideration for both IT capabilities and security countermeasures, we saw that analyzing the benefits is not. The goals of IT systems and security are aligned but the means how they contribute to a business are different. Primarily IT systems enhance the business whereas security countermeasures keep the business from expiring prematurely. Just remember, it’s not only about saving or adding revenue, we also need actions that secure the business to last during its worst days.</p>
+
+  </div><a class="u-url" href="/security/accounting/2019/06/22/it-cost-benefit-the-hard-way.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>This is a collection of logs written as an open reflection.   </p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

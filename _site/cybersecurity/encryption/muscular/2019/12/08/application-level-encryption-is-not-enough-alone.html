@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Application Level Ecryption Is Not Enough - Alone | Logs</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Application Level Ecryption Is Not Enough - Alone" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="It’s pretty common that clients ask about the role of network encryption (VPNs, MACSec etc.) now that almost all web applications utilize TLS encryption. The short blanket answer is: absolutely needed. Although there are plenty of reasons supporting that opinion, I think the picture below should help you to make up your mind on this topic." />
+<meta property="og:description" content="It’s pretty common that clients ask about the role of network encryption (VPNs, MACSec etc.) now that almost all web applications utilize TLS encryption. The short blanket answer is: absolutely needed. Although there are plenty of reasons supporting that opinion, I think the picture below should help you to make up your mind on this topic." />
+<link rel="canonical" href="http://localhost:4000/cybersecurity/encryption/muscular/2019/12/08/application-level-encryption-is-not-enough-alone.html" />
+<meta property="og:url" content="http://localhost:4000/cybersecurity/encryption/muscular/2019/12/08/application-level-encryption-is-not-enough-alone.html" />
+<meta property="og:site_name" content="Logs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-08T00:00:00+02:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Application Level Ecryption Is Not Enough - Alone" />
+<script type="application/ld+json">
+{"datePublished":"2019-12-08T00:00:00+02:00","headline":"Application Level Ecryption Is Not Enough - Alone","url":"http://localhost:4000/cybersecurity/encryption/muscular/2019/12/08/application-level-encryption-is-not-enough-alone.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/cybersecurity/encryption/muscular/2019/12/08/application-level-encryption-is-not-enough-alone.html"},"description":"It’s pretty common that clients ask about the role of network encryption (VPNs, MACSec etc.) now that almost all web applications utilize TLS encryption. The short blanket answer is: absolutely needed. Although there are plenty of reasons supporting that opinion, I think the picture below should help you to make up your mind on this topic.","@type":"BlogPosting","dateModified":"2019-12-08T00:00:00+02:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Logs" />
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Logs</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About Me</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Application Level Ecryption Is Not Enough - Alone</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2019-12-08T00:00:00+02:00" itemprop="datePublished">
+        Dec 8, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>It’s pretty common that clients ask about the role of network encryption (VPNs, MACSec etc.) now that almost all web applications utilize TLS encryption. The short blanket answer is: absolutely needed. Although there are plenty of reasons supporting that opinion, I think the picture below should help you to make up your mind on this topic.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/NSA_Muscular_Google_Cloud.jpg" alt="Idea behind the MUSCULAR program, which gave direct access to Google and Yahoo private clouds, no warrants needed." /></p>
+
+<p>MUSCULAR (DS-200B) surveillance program,<br />
+source: <a href="https://en.wikipedia.org/wiki/MUSCULAR_(surveillance_program)">https://en.wikipedia.org/wiki/MUSCULAR_(surveillance_program)</a></p>
+
+<p>Few years ago, a surveillance program called Muscular exploited a design flaw in cloud applications in which only the traffic to web front-end was encrypted. The traffic within the data centers was in clear text. Taking into account the geographical dispersion of the data centers this made/makes the interception of the traffic more than possible for the interested party.</p>
+
+<p>This is troubling since most enterprises have on-boarded cloud based workplace applications. The case is a reminder that you shouldn’t expect that your provider has implemented comprehensive encryption by default. This was the caveat that Muscular exploited. Therefore, it’s important to know how your provider has secured their production networks against attacks on confidentiality.</p>
+
+<p>Similar outcome can be a result of operating hundreds of private applications that are of different generations. In this case, the problem lies in varying design requirements, implementation and the sheer volume. That’s why it may be extremely hard or impossible to assure fully encrypted application layer even if you are operating your own applications. Typical examples include:</p>
+
+<ul>
+  <li>Web front ends deployed with vulnerable versions of SSL or</li>
+  <li>One tier of the three tier application doesn’t provide any kind of encryption or</li>
+  <li>Like in the case above, there is no network level encryption between production sites.</li>
+</ul>
+
+<p>Facts on the table, it is hard not to consider network level encryption technologies like MACSec and VPNs as an added layer of protection for the applications.</p>
+
+  </div><a class="u-url" href="/cybersecurity/encryption/muscular/2019/12/08/application-level-encryption-is-not-enough-alone.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>This is a collection of logs written as an open reflection.   </p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
