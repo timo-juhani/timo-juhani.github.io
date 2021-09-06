@@ -4,6 +4,14 @@ title: About Me
 permalink: /about/
 ---
 
+<style>
+img {
+  float: left;
+  margin-right:15px;
+}
+</style>
+<img src="/profile.jpg" style="width:150px">
+
 I'm TJ Karjalainen. A Finnish network and security engineer. I advise, design and build novel solutions that help my customers to win on their field of business and defend their slice of the ever growing cyberspace. 
 
 If I'm not working on my projects, I can be found working out (early mornings most preferrably), shooting my bow, hiking, heating up a sauna or going around our house finding places to fix or improve. 
@@ -15,5 +23,3 @@ If you want to reach out, you can find me via email but also social media (check
 BR,
 
 TJ
-
-<img align="right " height="150" src="/profile.jpg">
