@@ -1,7 +1,6 @@
 GIT
-  remote: https://github.com/jekyll/minima.git
+  remote: https://github.com/jekyll/minima
   revision: 3cdd14dff1216f561c68329e0b7420c2dc9b796a
-  branch: master
   specs:
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
@@ -232,8 +231,6 @@ GEM
     minitest (5.14.4)
     multipart-post (2.1.1)
     nokogiri (1.12.4-arm64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.12.4-x86_64-darwin)
       racc (~> 1.4)
     octokit (4.21.0)
       faraday (>= 0.9)
