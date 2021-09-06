@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Relaunching The Blog"
-permalink: /logs/
+date: 2021-09-05
+categories: blog
 ---
+
 I'm relaunching the blog after a period of silence. The old posts will be migrated here over time. The spark came during my long paternity leave. I had time to rethink some of the things I'm doing currently. While posting has proven to be valuable tool for me to digest information so that it's understood and remembered. The process of posting has been problematic. So I had to do changes.
 
 I've been using Twitter, LinekdIn and Worpress (.com) to share my posts. To keep it short, my approach has been without a clear strategy or a plan which is asking for trouble. If you want to work an idea, it should be easy. Much like jotting notes with a pen and a notebook. I don't want to spend time thinking which platform I should post on, how long the payload should be and how to arrange the inter-platform posting. 
