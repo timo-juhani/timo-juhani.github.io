@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 # Description of the site
 title: Logs
-author: TJK
+# author: TJK
 description: >- # this means to ignore newlines until "baseurl:"
   This is a collection of logs written as an open reflection.   
 
@@ -13,9 +13,13 @@ baseurl: ""
 url: "https://timo-juhani.github.io/"
 
 # Social media settings
-twitter_username: tj_karjalainen
-github_username: timo-juhani
-linkedin_username: tjkarjalainen
+# twitter_username: tj_karjalainen
+# github_username: timo-juhani
+# linkedin_username: tjkarjalainen
+
+minima:
+  skin: dark
+  date_format: "%Y-%m-%d"
 
 theme: minima
 
