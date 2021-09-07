@@ -21,9 +21,10 @@ minima:
   skin: dark
   date_format: "%Y-%m-%d"
 
-theme: minima
+remote_theme: jekyll/minima
 
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
