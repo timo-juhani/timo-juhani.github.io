@@ -1,7 +1,9 @@
 # Welcome to Jekyll!
 # Description of the site
 title: Logs
-# author: TJK
+author:
+  name: TJK
+  email: rawinbox@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a collection of logs written as an open reflection.   
 
@@ -12,18 +14,17 @@ show_excerpts: true
 baseurl: ""
 url: "https://timo-juhani.github.io/"
 
-# Social media settings
-# twitter_username: tj_karjalainen
-# github_username: timo-juhani
-# linkedin_username: tjkarjalainen
-
+# Minima theme settings
 minima:
   skin: dark
   date_format: "%Y-%m-%d"
-
-remote_theme: jekyll/minima
-
+  social_links:
+    github: timo-juhani
+    linkedin: tjkarjalainen
+    twitter: tj_karjalainen
+    
 # Build settings
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
