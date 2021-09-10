@@ -2,6 +2,7 @@
 layout: post
 title:  "Path Traversal to Hack VPN"
 date: 2021-09-10
+category: logs
 ---
 
 Fortinet got [hacked](https://www.bleepingcomputer.com/news/security/hackers-leak-passwords-for-500-000-fortinet-vpn-accounts/). The incident has been pretty well covered by news sites. The hack was enabled by this [vulnerability](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13379) which is a pretty old one from 2018. The vulnerability has been fixed in May 2019. Running old software is never a good idea and this time it seem the victims paid a price for it. 
