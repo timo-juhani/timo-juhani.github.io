@@ -2,7 +2,7 @@
 layout: post
 title:  "Asking Too Much"
 date: 2020-12-14
-categories: privacy gdpr databreach
+categories: logs
 ---
 
 I've been following government responses on cyber and infosec incidents and internet mass surveillance for years now. I even wrote few starry-eyed posts asking for ownership. This year, however, I got educated: Perhaps I'm asking too much.

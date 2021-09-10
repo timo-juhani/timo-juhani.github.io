@@ -2,7 +2,7 @@
 layout: post
 title:  "Becoming CISSP"
 date: 2019-1-9
-categories: CISSP cybersecurity
+categories: logs
 ---
 
 Some time ago I took CISSP exam and passed. This was the high point of an endurance race that lasted for almost nine months and cost more than 400 hours of my free time. Completing this goal was amazingly satisfying. I am writing this post because of that reason. I want that more people can have that same feeling and become better in the process.

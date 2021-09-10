@@ -2,7 +2,7 @@
 layout: post
 title:  "OPSEC: Burner Phones and Evading Tracking"
 date: 2019-7-28
-categories: opsec security cybersecurity signal
+categories: logs
 ---
 
 "Silence means security" was a well-known statement during WW2. Today, we all carry tracking devices on our hips voluntarily and the devices are, by design, not silent at all. They expose our routines, consumption patterns, social networks and our location. To sum it up, they are a disaster from [OPSEC](https://www.tripwire.com/state-of-security/security-data-protection/opsec-everyone-not-just-people-something-hide/) perspective.

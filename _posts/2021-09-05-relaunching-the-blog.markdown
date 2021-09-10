@@ -2,7 +2,7 @@
 layout: post
 title:  "Relaunching The Blog"
 date: 2021-09-05
-categories: blog
+categories: logs
 ---
 
 I'm relaunching the blog after a period of silence. The old posts will be migrated here over time. The spark came during my long paternity leave. I had time to rethink some of the things I'm doing currently. While posting has proven to be valuable tool for me to digest information so that it's understood and remembered. The process of posting has been problematic. So I had to do changes.

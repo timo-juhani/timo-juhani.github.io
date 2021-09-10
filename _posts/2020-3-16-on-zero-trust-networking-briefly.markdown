@@ -2,7 +2,7 @@
 layout: post
 title:  "On Zero Trust Networking (Briefly)"
 date: 2020-3-16
-categories: ztn aci cisco cybersecurity
+categories: logs
 ---
 
 Zero Trust Networking (ZTN) is one of the main trends in the security minded networking industry today. While many have a tremendous appetite to implement ZTN capabilty only few are able to. Why?

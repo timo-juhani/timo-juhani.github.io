@@ -2,7 +2,7 @@
 layout: post
 title:  "Decision Making for Architecture Design"
 date: 2019-10-31
-categories: architecture design
+categories: logs
 ---
 
 Procrastination is a common problem in architecture development initiatives. In fact, it’s a problem that dictates almost every move we make. When things are complicated it is easy to be overwhelmed and hard to get started. At the same time, no-one argues about the importance of the informed first move which gives the momentum that builds on itself.

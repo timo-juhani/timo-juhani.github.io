@@ -2,7 +2,7 @@
 layout: post
 title:  "Agile Manifesto Reviewed"
 date: 2020-7-7
-categories: agile devops
+categories: logs
 ---
 
 I seem to read [Agile Manifesto](https://agilemanifesto.org/) periodically. It has to be because different discussions and trainings point you back to review the original manifesto. Although it's starting to be quite dated, I can understand this ask. Agile has become an important product development method which touches most IT projects today and sometimes dominates the discussion. So instead of just reading it through (again), let's review it and see how it holds its ground today.

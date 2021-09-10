@@ -2,7 +2,7 @@
 layout: post
 title:  "OPSEC: Your Private Defensive Perimeter"
 date: 2019-7-30
-categories: opsec security cybersecurity sherlock
+categories: logs
 ---
 
 

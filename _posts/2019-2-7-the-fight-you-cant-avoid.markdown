@@ -2,7 +2,7 @@
 layout: post
 title:  "The Fight You Can't Avoid"
 date: 2019-2-7
-categories: cybersecurity cyberwar
+categories: logs
 ---
 
 #### Grey Zone Conflicts in Networked Infrastructure

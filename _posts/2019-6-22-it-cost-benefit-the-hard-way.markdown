@@ -2,7 +2,7 @@
 layout: post
 title:  "IT Cost-Benefit Analysis - The Hard Way"
 date: 2019-6-22
-categories: security accounting
+categories: logs
 ---
 
 This week I had an intriguing discussion about cost-benefit analysis in the context of IT architecture development. As we planned for new capabilities on both network and security domain, I made a remark that keeping mind clear on the objectives of the analysis was difficult. That in mind, I wanted to record my conclusions lest they are forgotten.

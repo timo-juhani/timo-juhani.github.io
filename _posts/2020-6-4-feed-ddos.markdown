@@ -2,7 +2,7 @@
 layout: post
 title:  "Feed DDoS"
 date: 2020-6-4
-categories: socialmedia ddos
+categories: logs
 ---
 
 I've been following up the social media ever since the protests started in the US. To set it off: My very limited understanding of the situation and history, doesn't provide me to have a public opinion on it. I'm just making observations on the technology that seems to lay the foundation for messaging and sharing information during an incident like this.

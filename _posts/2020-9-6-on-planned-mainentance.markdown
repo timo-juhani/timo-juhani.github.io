@@ -2,7 +2,7 @@
 layout: post
 title:  "On Planned Maintenance Work"
 date: 2020-09-06
-categories: banking maintenance
+categories: logs
 ---
 
 Some days ago, I noticed emerging news items covering major maintenance windows of Finnish banks [OP and Nordea](https://yle.fi/uutiset/3-11524828) reported by YLE (Finnish Broadcasting Company). Because of Corona pandemia this leaves consumers in a tricky situation since cash payments are not accepted broadly at the moment, according to the article. Hence YLE reported the planned maintenance in the news.

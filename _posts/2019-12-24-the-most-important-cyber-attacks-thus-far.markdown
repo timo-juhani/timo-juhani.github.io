@@ -2,7 +2,7 @@
 layout: post
 title:  "The Most Important Cyber Attacks Thus Far"
 date: 2019-12-24
-categories: cybersecurity ransomware ukraine cyberwar mirai iot ccleaner
+categories: logs
 ---
 
 ### Atlanta Ransomware Incident 2018

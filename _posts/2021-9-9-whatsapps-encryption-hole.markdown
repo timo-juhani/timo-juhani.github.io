@@ -2,7 +2,7 @@
 layout: post
 title:  "WhatsApps Encryption Hole"
 date: 2021-09-09
-categories: cybersecurity facebook whatsapp privacy
+categories: logs
 ---
 
 A snappy article was about WhatsApps end to end encryption was published Sep 7. Find it [here](https://www.propublica.org/article/how-facebook-undermines-privacy-protections-for-its-2-billion-whatsapp-users). The expectation is that end user communication is end to end encrypted. But in the light of the article it appears there is a team of people who's sole job is to open flagged messages and read them. 

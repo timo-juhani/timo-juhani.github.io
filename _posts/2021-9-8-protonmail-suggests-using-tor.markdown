@@ -2,7 +2,7 @@
 layout: post
 title:  "ProtonMail Suggests Using Tor"
 date: 2021-09-08
-categories: cybersecurity tor protonmail
+categories: logs
 ---
 
 ProtonMail was forced to give up IP address and browser signature of their user who has facing legal processing. This seems to run agains their policy in which they stated previously not to give any information "by default". 

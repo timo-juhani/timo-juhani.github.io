@@ -2,7 +2,7 @@
 layout: post
 title:  "On Architecture Design"
 date: 2019-3-22
-categories: architecture design
+categories: logs
 ---
 
 ### Navigating in complexity and disorder

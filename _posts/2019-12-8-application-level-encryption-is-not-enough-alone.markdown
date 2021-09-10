@@ -2,7 +2,7 @@
 layout: post
 title:  "Application Level Ecryption Is Not Enough - Alone"
 date: 2019-12-8
-categories: cybersecurity encryption muscular
+categories: logs
 ---
 
 It's pretty common that clients ask about the role of network encryption (VPNs, MACSec etc.) now that almost all web applications utilize TLS encryption. The short blanket answer is: absolutely needed. Although there are plenty of reasons supporting that opinion, I think the picture below should help you to make up your mind on this topic.
