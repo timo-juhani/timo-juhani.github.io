@@ -7,7 +7,13 @@ category: logs
 
 [NCSC advices organizations to improve their resilience with the cyber threat heightened](https://www.ncsc.gov.uk/guidance/actions-to-take-when-the-cyber-threat-is-heightened)
 
-I reviewed NCSC's advice and it seems to almost identical what they issued overseas by US Cert in 2014 when the hybrid operation in Ukraine began. The recommendation has remained pretty much the same (the spirit, the controls, the checklist). What it fails to point out (imho) is that it's really a baseline checklist. You should have that place by now and if you don't it's a bummer because it could take not months but a year or more to put everything in tip top shape. Again, in my opinion, it does little to those companies who have listened and are on the path. It does even less to those how haven't heard the gospel and now find themselves in reactive mode. So what I try to say: I fully agree with the checklist, its role and content, but it lacks proper reactions for those that find themselves unprepared now that the gloves are off.  
+I reviewed NCSC's advice and it seems to almost identical what they issued overseas by US Cert in 2014 when the hybrid operation in Ukraine began. The recommendation has remained pretty much the same (the spirit, the controls, the checklist). 
+
+What it fails to point out (imho) is that it's really a baseline checklist. You should have that place by now and if you don't it's a bummer because it could take not months but a year or more to put everything in tip top shape. 
+
+Again, in my opinion, it does little to those companies who have listened and are on the path. It does even less to those who haven't heard the gospel and now find themselves in reactive mode. 
+
+So what I try to say: I fully agree with the checklist, its role and content, but it lacks proper reactions for those that find themselves unprepared now that the gloves are off.  
 
 So the checklist has remained the same for almost 8 years and arguably beyond. What's the message. Perhaps: 
 - The basic laws of protection are universal and should be always applied 
