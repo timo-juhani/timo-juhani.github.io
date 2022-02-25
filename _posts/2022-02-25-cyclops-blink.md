@@ -15,7 +15,7 @@ It runs on Linux systems that is deployed on PowerPC architecture. So what does 
 
 It seems PowerPC processors are indeed used in routers and route processors, for instance some older Cisco equipment like Cisco 7600 and Catalyst 6500 (not SoHo or home by any means) have them. Interestingly popular platforms like ASR 1000 series have them as well. Furthemore, it appears that PowerPC architecture is also widely adopted in enterprise and smaller switches. So it seems like a standard HW architecture choice for networking. Why?
 
-Well, it seems to come down to processor requirements that network traffic has. PowerPC is based on RISC architecture whereas x86 is CISC. In RISC architecture each packet or task can be handled with the same CPU cycle giving a faster forwarding rate that CISC. This design requirement is obviously a primary reason why PowerPC is chosen as a target.
+Well, it seems to come down to processor requirements that network traffic has. PowerPC is based on RISC architecture whereas x86 is CISC. In RISC architecture each packet or task can be handled with the same CPU cycle giving a faster forwarding rate that CISC. This design requirement is obviously a primary reason why PowerPC is used.
 
 However, not all networking OS are based on Linux, which is key here. So the malware doesn't apply to all PowerPC based equipment. They must be running Linux based networking OS like OpenWrt. This explains why the target is mainly home and SoHo devices rather than enterprise devices as well.  
 
