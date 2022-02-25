@@ -21,6 +21,6 @@ However, not all networking OS are based on Linux, which is key here. So the mal
 
 Under the hood, the malware runs as a process named "kworker[0:1]" which may look familiar to all Linux users. Using this process name it masks itself as a kernel process. It applies changes to iptables to establish C&C channels back to the attacker. The channel is encrypted using TLS tunnel and AES-256 encryption on the control commands themselves. Which makes it hard to detect or analyse. 
 
-Talos has published a Threat Advisory: [link]("https://blog.talosintelligence.com/2022/02/threat-advisory-cyclops-blink.html")
+Talos has published a Threat Advisory: [link](https://blog.talosintelligence.com/2022/02/threat-advisory-cyclops-blink.html)
 
 They have also published signatures so that the malware can be caught for instance with Snort.
