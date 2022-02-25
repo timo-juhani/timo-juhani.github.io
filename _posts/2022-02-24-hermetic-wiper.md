@@ -12,6 +12,6 @@ It may have been that the attacker had taken control over the victims' Microsoft
 Protect your ADs.
 
 Update Feb 25:
-Talos has published a Threat Advisory covering the wiper: [link]("https://blog.talosintelligence.com/2022/02/threat-advisory-hermeticwiper.html") 
+Talos has published a Threat Advisory covering the wiper: [link](https://blog.talosintelligence.com/2022/02/threat-advisory-hermeticwiper.html) 
 
 They have also published signatures so that the wiper can be caught for instance with Snort. 
