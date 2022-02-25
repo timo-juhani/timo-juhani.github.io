@@ -9,7 +9,7 @@ D2 of the conflict in Ukraine.
 
 New malware found. They call it Cyclops Blink.
 
-The malware seems to target home and small office network devices much like VPNFilter. It provides recon capabilities put also can establish C&C and information import/export operations.
+The malware seems to target home and small office network devices much like VPNFilter. It provides recon capabilities but also can establish C&C and information import/export operations.
 
 It runs on Linux systems that is deployed on PowerPC architecture. So what does this mean in practice? PowerPC architecture can be found from automotive and defence industries (e.g. F-35 fighter subsystem). But since this is reported to be targeting home and SoHo networking gear, I really had to educate myself on the topic.
 
