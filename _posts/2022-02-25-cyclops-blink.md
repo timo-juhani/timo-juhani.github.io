@@ -23,4 +23,4 @@ Under the hood, the malware runs as a process named "kworker[0:1]" which may loo
 
 Talos has published a Threat Advisory: [link]("https://blog.talosintelligence.com/2022/02/threat-advisory-cyclops-blink.html")
 
-They have also published signatures so that the wiper can be caught for instance with Snort.
+They have also published signatures so that the malware can be caught for instance with Snort.
