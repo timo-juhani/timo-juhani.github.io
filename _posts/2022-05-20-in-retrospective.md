@@ -7,7 +7,7 @@ category: logs
 
 Vmware warned their customers to patch their systems on Wed (CVE-2022-22972). This vulnerability enables a threat that allows authentication bypass on Vmware’s popular products such as vRealize Automation and Cloud Foundation. After a successful exploitation the attacker gains admin access with authentication. Their recommendation is patching with a sense of urgency. Luckily this doesn’t pose a threat on ESXi software.
  
-[](https://core.vmware.com/vmsa-2022-0014-questions-answers-faq#sec20356-sub2)
+[source](https://core.vmware.com/vmsa-2022-0014-questions-answers-faq#sec20356-sub2)
  
 While staying up to date on the current situation, a retrospective view is a must to understand how we got here. PWC has published their “cyber year 2021” report. Key findings:
 The number of published 0-day vulnerabilities has increased. This most likely sounds familiar due to previous threat updates. There are a couple of strategic developments here that should leave food for thought: 1) why is the number increasing and 2) what’s the bigger picture as we’re seeing an ever growing footprint of unpatched infra and more and more zero day threats. It’s clear that the reasons demand discussion but so does our response. How do we scale up our efforts while the number of threats grow.
@@ -16,7 +16,7 @@ Supply chain attacks are an important part of more developed attacks. The tactic
 Quartermasters (yes, it now has a name it seems) or offensive software developers have started to sell their goods to companies and organizations. This a change in the culture – and perhaps demand as quartermasters have been selling their goods mainly to military customers. What’s the problem? Well, why does the companies and organizations feel need for offensive capabilities?
 Digital surveillance has continued or increased during the last year. That’s why technology trends such as privacy enhancing computation are now being highlighted in the industry.
  
-[](https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/cyber-year-in-retrospect.html)
+[source](https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/cyber-year-in-retrospect.html)
  
 A joint security advisory about top 10 attack vectors by national authorities was published on Tue. On the list are the most discussed topics like: outdated software, misconfiguration or default configuration, weak password policies, unused services and open ports. While these basics should always be in check controls like:
 enabling MFA,
@@ -24,10 +24,10 @@ securing remote access for unauthorized access (VPN or SASE),
 protecting and understanding how to protect public cloud technologies  
 having routines how detect and respond to phishing and endpoint activities should be on the high priority list waiting for design and implementation.
 
-[](https://www.cisa.gov/uscert/ncas/alerts/aa22-137a)
+[source](https://www.cisa.gov/uscert/ncas/alerts/aa22-137a)
  
 Greenland’s national health service has been down since May 9 (updated yesterday). Sometimes recovery is hard. Regular response practice is important. The mindset bias with this is not to practice because it costs and you don’t know whether you are attacked –  “are we wasting money?”. The return of investment in security can’t be measured (often) in money rather it’s measured in ounces of the life blood of the organization.
  
-[](https://sermitsiaq.ag/cyberangreb-giver-store-problemer-i-sundhedsvaesenet)
+[source](https://sermitsiaq.ag/cyberangreb-giver-store-problemer-i-sundhedsvaesenet)
 
  
