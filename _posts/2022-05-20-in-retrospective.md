@@ -23,10 +23,11 @@ enabling MFA,
 securing remote access for unauthorized access (VPN or SASE),
 protecting and understanding how to protect public cloud technologies  
 having routines how detect and respond to phishing and endpoint activities should be on the high priority list waiting for design and implementation.
- 
+
 [](https://www.cisa.gov/uscert/ncas/alerts/aa22-137a)
  
 Greenland’s national health service has been down since May 9 (updated yesterday). Sometimes recovery is hard. Regular response practice is important. The mindset bias with this is not to practice because it costs and you don’t know whether you are attacked –  “are we wasting money?”. The return of investment in security can’t be measured (often) in money rather it’s measured in ounces of the life blood of the organization.
  
 [](https://sermitsiaq.ag/cyberangreb-giver-store-problemer-i-sundhedsvaesenet)
+
  
