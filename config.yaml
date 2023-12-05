@@ -43,7 +43,7 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+    #description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
     author: TJK
 
     defaultTheme: auto
@@ -83,12 +83,6 @@ params:
           url: "https://github.com/timo-juhani"
         - name: Rss
           url: "index.xml"
-
-    editPost:
-        URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
-        Text: "Suggest Changes" # edit text
-        appendFilePath: true # to append file path to Edit link
-
 
     assets:
         disableHLJS: true
