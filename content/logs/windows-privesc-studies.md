@@ -2,6 +2,7 @@
 title = 'Windows Privesc Studies'
 date = 2023-12-05T15:06:09+02:00
 draft = false
+tags = ['security']
 +++
 
 As part of the recent studies I've been trying to wrap my head around Windows 
