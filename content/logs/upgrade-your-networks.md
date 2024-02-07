@@ -12,4 +12,4 @@ in parallel saving a lot of time and money while reaching the objective of runni
 
 The project is based on Python, expects only SSH connection from network devices and is easy to learn by anyone who has some experience on Linux shell and networking equipment. 
 
-[](https://github.com/timo-juhani/lan_upgrade)
+<https://github.com/timo-juhani/lan_upgrade>
