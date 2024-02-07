@@ -21,7 +21,7 @@ cd sampleproject
 touch README.md
 git add README.md
 git commit -m "add file"
-push git origin main
+git push origin main
 ```
 
 That's it. Another client can clone the repo normally and pull / push changes whenever needed.  
