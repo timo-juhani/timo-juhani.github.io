@@ -2,6 +2,7 @@
 title = 'Upgrade Your Networks'
 date = 2024-02-07T09:17:41+02:00
 draft = false
+tags = ["networks", "security"]
 +++
 
 Patching your infrastructure is one of the best ways to have a huge impact on your security posture. While this is undebateble fact and while some organizations have this under control many still struggle to keep up with the emerging vulnerabilities.

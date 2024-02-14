@@ -2,6 +2,7 @@
 title = 'Bare Minimum Git'
 date = 2024-02-07T17:38:04+02:00
 draft = false
+tags = ["dev"]
 +++
 
 I had a recurring annoyance of running Gitlab instances in the lab. No matter whether I used Docker or just normal Gitlab instance at some point it broke or didn't want to upgrade without grief. Frankly, I don't have time to fix broken tools. Instead I need a hammer that is maintenance free. I got back to basics by implementing a bare minimum Git setup like this.
