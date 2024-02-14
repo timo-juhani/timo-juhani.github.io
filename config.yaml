@@ -76,7 +76,7 @@ params:
     homeInfoParams:
         Title: "Welcome to Logs"
         Content: >
-            Security, technology and open reflections.
+            Security, technology and reflections.
 
     socialIcons:
         - name: github
