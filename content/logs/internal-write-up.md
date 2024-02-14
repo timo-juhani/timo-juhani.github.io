@@ -5,9 +5,9 @@ draft = false
 tags = ["tryhackme", "security", "pentest", "oscp"]
 +++
 
-Box: Medium
-Platform: Try Hack Me
-Grade: Medium
+Box: Internal/
+Platform: Try Hack Me/
+Grade: Medium/
 
 ## Service Enumeration
 
