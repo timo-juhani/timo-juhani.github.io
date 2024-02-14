@@ -7,7 +7,7 @@ tags = ["tryhackme", "security", "pentest", "oscp"]
 
 Box: Internal\
 Platform: Try Hack Me\
-Grade: Medium\
+Grade: Medium
 
 ## Service Enumeration
 
