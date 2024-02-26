@@ -92,8 +92,8 @@ gcloud compute forwarding-rules create http-content-rule \
         --ports 80
 ```
 
+## Lessons learned:
 
-Lessons learned:
 - Understanding what you do is the most important.
 - And for that reason the lack of my load balancing knowledge really turned this one into a mind bender for a moment.
 - Don't go forward until you understand.
