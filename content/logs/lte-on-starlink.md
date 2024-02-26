@@ -1,5 +1,5 @@
 +++
-title = 'Lte on Starlink'
+title = 'LTE on Starlink'
 date = 2024-02-26T09:18:32+02:00
 draft = false
 tags = ["networking", "space"]
@@ -9,5 +9,5 @@ Sending and receiving LTE calls, messages and data without terrestrial LTE base 
 
 This could be a start of something new. Time will tell.
 
-[](https://www.starlink.com/business/direct-to-cell)
+<https://www.starlink.com/business/direct-to-cell>
 
