@@ -1,7 +1,7 @@
 +++
 title = 'Advent of Cyber 2024 - Day 1'
 date = 2024-12-02T10:12:29+02:00
-draft = false
+draft = true
 +++
 
 There is a hosted website that appears to be a converter called "The Glitch's All-in-One Converter".
