@@ -10,27 +10,27 @@ Cisco NSO is a powerful network automation tool that can help network operations
 
 Finally, I believe this same implementation template can be used for any project that aims to seize control over IT resources using some sort of centralized automation capability. 
 
-## WIN#1: System installation
+### WIN#1: System installation
 
 Get the tool installed to a data center or another centralized location that has management network connections to the devices. Prepare to get the permissions, compute capacity, and firewall rules in place prior to starting the installation. 
 
-## WIN#2: Take control over the devices
+### WIN#2: Take control over the devices
 
 This requires connecting to the devices using strong authentication and onboarding the devices to NSO. After that, you can start managing all your devices from a single CLI which on its own is an amazing benefit. 
 
-## WIN#3: Device templates
+### WIN#3: Device templates
 
 Use device templates to establish standards that all network device configurations should comply with. A typical example is to set all static global security and network settings under a device template. You can use simple variables in device templates to set, for example, an IP address to your Loopback interface.
 
-## WIN#4: Audit
+### WIN#4: Audit
 
 Audit the network using device templates and see where it needs fixing the most. 
 
-## WIN#5: Remediate the issues
+### WIN#5: Remediate the issues
 
 Apply the device template(s) to your devices to make sure they follow the standard you want to enforce. 
 
-## WIN#6-N: Develop network services
+### WIN#6-N: Develop network services
 
 It makes sense to start with the services that only affect a single device and then move on to more complex services that must be orchestrated on multiple devices.
 
