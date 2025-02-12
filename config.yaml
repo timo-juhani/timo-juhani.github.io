@@ -1,6 +1,6 @@
 baseURL: "https://timo-juhani.github.io/" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: Logs
-paginate: 5
+pagination.pagerSize: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -77,12 +77,6 @@ params:
         Title: "Welcome to Logs"
         Content: >
             Security, technology and reflections.
-
-    socialIcons:
-        - name: github
-          url: "https://github.com/timo-juhani"
-        - name: Rss
-          url: "index.xml"
 
     assets:
         disableHLJS: true
