@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Coding on Logs</title>
+    <link>http://localhost:1313/tags/coding/</link>
+    <description>Recent content in Coding on Logs</description>
+    <image>
+      <title>Logs</title>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Feb 2024 15:11:08 +0200</lastBuildDate><atom:link href="http://localhost:1313/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Immutable Data</title>
+      <link>http://localhost:1313/logs/immutable-data/</link>
+      <pubDate>Sun, 25 Feb 2024 15:11:08 +0200</pubDate>
+      
+      <guid>http://localhost:1313/logs/immutable-data/</guid>
+      <description>&lt;p&gt;Although I&amp;rsquo;m not a coder by profession, I&amp;rsquo;ve been coding quite a bit during the recent months. While doing that I&amp;rsquo;ve tried to improve my coding principles.&lt;/p&gt;
+&lt;p&gt;I stumbled onto functional programming. While the concept is everything but new in 2024 I had not really looked into it if you don&amp;rsquo;t count in pure functions.&lt;/p&gt;
+&lt;p&gt;So the scenario is like this: In Python it&amp;rsquo;s quite common that you end up using data structures like a list of dictionaries as a defacto weapon of choice. And of course there is nothing wrong with that. In my cases however those have proven to be error-prone from time to time.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

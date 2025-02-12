@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Security on Logs</title>
+    <link>http://localhost:1313/tags/security/</link>
+    <description>Recent content in Security on Logs</description>
+    <image>
+      <title>Logs</title>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 14 Feb 2024 08:50:55 +0200</lastBuildDate><atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Internal Write Up</title>
+      <link>http://localhost:1313/logs/internal-write-up/</link>
+      <pubDate>Wed, 14 Feb 2024 08:50:55 +0200</pubDate>
+      
+      <guid>http://localhost:1313/logs/internal-write-up/</guid>
+      <description>&lt;p&gt;Box: Internal&lt;br&gt;
+Platform: Try Hack Me&lt;br&gt;
+Grade: Hard&lt;/p&gt;
+&lt;h2 id=&#34;service-enumeration&#34;&gt;Service Enumeration&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo nmap -sC -sV 10.10.52.194
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 6e:fa:ef:be:f6:5f:98:b9:59:7b:f7:8e:b9:c5:62:1e (RSA)
+|   256 ed:64:ed:33:e5:c9:30:58:ba:23:04:0d:14:eb:30:e9 (ECDSA)
+|_  256 b0:7f:7f:7b:52:62:62:2a:60:d4:3d:36:fa:89:ee:ff (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 9.57 seconds
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;ssh&#34;&gt;SSH&lt;/h3&gt;
+&lt;p&gt;OpenSSH 7.6p1.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Upgrade Your Networks</title>
+      <link>http://localhost:1313/logs/upgrade-your-networks/</link>
+      <pubDate>Wed, 07 Feb 2024 09:17:41 +0200</pubDate>
+      
+      <guid>http://localhost:1313/logs/upgrade-your-networks/</guid>
+      <description>&lt;p&gt;Patching your infrastructure is one of the best ways to have a huge impact on your security posture. While this is undebateble fact and while some organizations have this under control many still struggle to keep up with the emerging vulnerabilities.&lt;/p&gt;
+&lt;p&gt;As a response to an alarming state of how many networks still run unpatched and the growing number of network exploits I created this
+project called LAN Upgrade. As of today it&amp;rsquo;s capable of patching IOS-XE switches (and possibly routers -&amp;gt; needs to be tested) in mass and
+in parallel saving a lot of time and money while reaching the objective of running safe and up to date network.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows Privesc Studies</title>
+      <link>http://localhost:1313/logs/windows-privesc-studies/</link>
+      <pubDate>Tue, 05 Dec 2023 15:06:09 +0200</pubDate>
+      
+      <guid>http://localhost:1313/logs/windows-privesc-studies/</guid>
+      <description>&lt;p&gt;As part of the recent studies I&amp;rsquo;ve been trying to wrap my head around Windows
+privilege escalation techniques. Although the techniques are becoming more and
+more familiar by just doing repetitions theory plays a role as well. Therefore,
+the presentation from Wild West Hackin&amp;rsquo; Fest (2019) helped to fill that gap.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=SHdM197sbIE&#34;&gt;Presentation by Jake Williams&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

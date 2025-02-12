@@ -10,6 +10,6 @@ Starting from the first moment the issue was reported Nordnet has 72 hours to pr
 
 [Nordnet Incident Report](https://www.nordnet.fi/faq/muut-aiheet/ongelmatilanteet/tietoa-teknisista-ongelmista-11-2-2025)
 
-Lessons:
+## Lessons:
 - Something changed. System state won't change on its own. 
 - Witnesses of privacy and security incidents should not interfere ,e.g., by sharing sreenshots via social media for the risk of themselves conducting a crime. 

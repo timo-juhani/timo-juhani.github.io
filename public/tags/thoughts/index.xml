@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Thoughts on Logs</title>
+    <link>http://localhost:1313/tags/thoughts/</link>
+    <description>Recent content in Thoughts on Logs</description>
+    <image>
+      <title>Logs</title>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Dec 2023 20:03:29 +0200</lastBuildDate><atom:link href="http://localhost:1313/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Failing</title>
+      <link>http://localhost:1313/logs/failing/</link>
+      <pubDate>Tue, 05 Dec 2023 20:03:29 +0200</pubDate>
+      
+      <guid>http://localhost:1313/logs/failing/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s better to fail early than avoid the bitter taste of defeat until the
+very last moment. It&amp;rsquo;s common to lead a self-talk that is based on untested
+capabilities and knowledge. When combined imagination and lack of context create
+a mind trap in which you may believe to be unbeatable but in fact are in the
+most vulnerable position when the moment of truth comes. It&amp;rsquo;s a very dangerous
+mind trap. Training and education should be intense, close to real life and
+present challenging scenario based situations - that sometimes has been designed
+to offer nothing but defeat. Failure teaches. Success inflates the ego,
+but as soon as it burst you find only emptiness. Go for the failure so that
+performance comes easier when its needed. Know your limits and then expand them.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
