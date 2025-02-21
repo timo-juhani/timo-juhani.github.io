@@ -8,7 +8,7 @@ draft = false
 
 CLOS fabric using VLAN based access and BGP as the fabric routing procotol. The network is shown below. All switches are Cisco Nexus 9000v. Let's go. 
 
-![Network Diagram](../../static/images/clos-fabric-bgp.png)
+![Network Diagram](images/clos-fabric-bgp.png)
 
 ## Leaf Configuration
 

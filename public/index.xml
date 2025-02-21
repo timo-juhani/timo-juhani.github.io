@@ -20,7 +20,7 @@
       <guid>https://timo-juhani.github.io/logs/bgp-based-data-center-fabric/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;CLOS fabric using VLAN based access and BGP as the fabric routing procotol. The network is shown below. All switches are Cisco Nexus 9000v. Let&amp;rsquo;s go.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Network Diagram&#34; loading=&#34;lazy&#34; src=&#34;../../static/images/clos-fabric-bgp.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Network Diagram&#34; loading=&#34;lazy&#34; src=&#34;images/clos-fabric-bgp.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;leaf-configuration&#34;&gt;Leaf Configuration&lt;/h2&gt;
 &lt;h3 id=&#34;route-map&#34;&gt;Route-map&lt;/h3&gt;
 &lt;p&gt;All switches have been configured with tagged IP addresses. Those tags are handy when redistributing routes to BGP. The approach saves the hassle of using network clauses and prefix-maps.&lt;/p&gt;
