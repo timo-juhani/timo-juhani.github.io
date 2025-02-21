@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Dev on Logs</title>
-    <link>https://timo-juhani.github.io/tags/dev/</link>
+    <link>http://localhost:1313/tags/dev/</link>
     <description>Recent content in Dev on Logs</description>
     <image>
       <title>Logs</title>
-      <url>https://timo-juhani.github.io/papermod-cover.png</url>
-      <link>https://timo-juhani.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 07 Feb 2024 17:38:04 +0200</lastBuildDate>
-    <atom:link href="https://timo-juhani.github.io/tags/dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bare Minimum Git</title>
-      <link>https://timo-juhani.github.io/logs/bare-minimum-git/</link>
+      <link>http://localhost:1313/logs/bare-minimum-git/</link>
       <pubDate>Wed, 07 Feb 2024 17:38:04 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/bare-minimum-git/</guid>
+      <guid>http://localhost:1313/logs/bare-minimum-git/</guid>
       <description>&lt;p&gt;I had a recurring annoyance of running Gitlab instances in the lab. No matter whether I used Docker or just normal Gitlab instance at some point it broke or didn&amp;rsquo;t want to upgrade without grief. Frankly, I don&amp;rsquo;t have time to fix broken tools. Instead I need a hammer that is maintenance free. I got back to basics by implementing a bare minimum Git setup like this.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Server
 # Create a root folder for all projects

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Networking on Logs</title>
-    <link>https://timo-juhani.github.io/tags/networking/</link>
+    <link>http://localhost:1313/tags/networking/</link>
     <description>Recent content in Networking on Logs</description>
     <image>
       <title>Logs</title>
-      <url>https://timo-juhani.github.io/papermod-cover.png</url>
-      <link>https://timo-juhani.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Feb 2024 09:18:32 +0200</lastBuildDate>
-    <atom:link href="https://timo-juhani.github.io/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LTE on Starlink</title>
-      <link>https://timo-juhani.github.io/logs/lte-on-starlink/</link>
+      <link>http://localhost:1313/logs/lte-on-starlink/</link>
       <pubDate>Mon, 26 Feb 2024 09:18:32 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/lte-on-starlink/</guid>
+      <guid>http://localhost:1313/logs/lte-on-starlink/</guid>
       <description>&lt;p&gt;Sending and receiving LTE calls, messages and data without terrestrial LTE base stations is possible. Starlink has launched a service called Direct to Cell which works on any LTE handset. In their architecture the satellite works as an eNodeB which can be then integrated to a wider network and roaming partners.&lt;/p&gt;
 &lt;p&gt;This could be a start of something new. Time will tell.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.starlink.com/business/direct-to-cell&#34;&gt;https://www.starlink.com/business/direct-to-cell&lt;/a&gt;&lt;/p&gt;</description>

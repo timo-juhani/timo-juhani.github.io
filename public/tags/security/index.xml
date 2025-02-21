@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Security on Logs</title>
-    <link>https://timo-juhani.github.io/tags/security/</link>
+    <link>http://localhost:1313/tags/security/</link>
     <description>Recent content in Security on Logs</description>
     <image>
       <title>Logs</title>
-      <url>https://timo-juhani.github.io/papermod-cover.png</url>
-      <link>https://timo-juhani.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Feb 2024 08:50:55 +0200</lastBuildDate>
-    <atom:link href="https://timo-juhani.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Internal Write Up</title>
-      <link>https://timo-juhani.github.io/logs/internal-write-up/</link>
+      <link>http://localhost:1313/logs/internal-write-up/</link>
       <pubDate>Wed, 14 Feb 2024 08:50:55 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/internal-write-up/</guid>
+      <guid>http://localhost:1313/logs/internal-write-up/</guid>
       <description>&lt;p&gt;Box: Internal&lt;br&gt;
 Platform: Try Hack Me&lt;br&gt;
 Grade: Hard&lt;/p&gt;
@@ -42,9 +42,9 @@ Nmap done: 1 IP address (1 host up) scanned in 9.57 seconds
     </item>
     <item>
       <title>Upgrade Your Networks</title>
-      <link>https://timo-juhani.github.io/logs/upgrade-your-networks/</link>
+      <link>http://localhost:1313/logs/upgrade-your-networks/</link>
       <pubDate>Wed, 07 Feb 2024 09:17:41 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/upgrade-your-networks/</guid>
+      <guid>http://localhost:1313/logs/upgrade-your-networks/</guid>
       <description>&lt;p&gt;Patching your infrastructure is one of the best ways to have a huge impact on your security posture. While this is undebateble fact and while some organizations have this under control many still struggle to keep up with the emerging vulnerabilities.&lt;/p&gt;
 &lt;p&gt;As a response to an alarming state of how many networks still run unpatched and the growing number of network exploits I created this
 project called LAN Upgrade. As of today it&amp;rsquo;s capable of patching IOS-XE switches (and possibly routers -&amp;gt; needs to be tested) in mass and
@@ -52,9 +52,9 @@ in parallel saving a lot of time and money while reaching the objective of runni
     </item>
     <item>
       <title>Windows Privesc Studies</title>
-      <link>https://timo-juhani.github.io/logs/windows-privesc-studies/</link>
+      <link>http://localhost:1313/logs/windows-privesc-studies/</link>
       <pubDate>Tue, 05 Dec 2023 15:06:09 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/windows-privesc-studies/</guid>
+      <guid>http://localhost:1313/logs/windows-privesc-studies/</guid>
       <description>&lt;p&gt;As part of the recent studies I&amp;rsquo;ve been trying to wrap my head around Windows
 privilege escalation techniques. Although the techniques are becoming more and
 more familiar by just doing repetitions theory plays a role as well. Therefore,

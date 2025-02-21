@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Thoughts on Logs</title>
-    <link>https://timo-juhani.github.io/tags/thoughts/</link>
+    <link>http://localhost:1313/tags/thoughts/</link>
     <description>Recent content in Thoughts on Logs</description>
     <image>
       <title>Logs</title>
-      <url>https://timo-juhani.github.io/papermod-cover.png</url>
-      <link>https://timo-juhani.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 Dec 2023 20:03:29 +0200</lastBuildDate>
-    <atom:link href="https://timo-juhani.github.io/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Failing</title>
-      <link>https://timo-juhani.github.io/logs/failing/</link>
+      <link>http://localhost:1313/logs/failing/</link>
       <pubDate>Tue, 05 Dec 2023 20:03:29 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/failing/</guid>
+      <guid>http://localhost:1313/logs/failing/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s better to fail early than avoid the bitter taste of defeat until the
 very last moment. It&amp;rsquo;s common to lead a self-talk that is based on untested
 capabilities and knowledge. When combined imagination and lack of context create

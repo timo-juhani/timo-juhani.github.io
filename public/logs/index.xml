@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Logs</title>
-    <link>https://timo-juhani.github.io/logs/</link>
+    <link>http://localhost:1313/logs/</link>
     <description>Recent content on Logs</description>
     <image>
       <title>Logs</title>
-      <url>https://timo-juhani.github.io/papermod-cover.png</url>
-      <link>https://timo-juhani.github.io/papermod-cover.png</link>
+      <url>http://localhost:1313/papermod-cover.png</url>
+      <link>http://localhost:1313/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Feb 2025 09:45:59 +0200</lastBuildDate>
-    <atom:link href="https://timo-juhani.github.io/logs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/logs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BGP Based Data Center Fabric</title>
-      <link>https://timo-juhani.github.io/logs/bgp-based-data-center-fabric/</link>
+      <link>http://localhost:1313/logs/bgp-based-data-center-fabric/</link>
       <pubDate>Fri, 21 Feb 2025 09:45:59 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/bgp-based-data-center-fabric/</guid>
+      <guid>http://localhost:1313/logs/bgp-based-data-center-fabric/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;CLOS fabric using VLAN based access and BGP as the fabric routing procotol. The network is shown below. All switches are Cisco Nexus 9000v. Let&amp;rsquo;s go.&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&#34;Network Diagram&#34; loading=&#34;lazy&#34; src=&#34;images/clos-fabric-bgp.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Network Diagram&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/clos-fabric-bgp.png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;leaf-configuration&#34;&gt;Leaf Configuration&lt;/h2&gt;
 &lt;h3 id=&#34;route-map&#34;&gt;Route-map&lt;/h3&gt;
 &lt;p&gt;All switches have been configured with tagged IP addresses. Those tags are handy when redistributing routes to BGP. The approach saves the hassle of using network clauses and prefix-maps.&lt;/p&gt;
@@ -31,17 +31,17 @@
     </item>
     <item>
       <title>Phased Approach To Cisco NSO</title>
-      <link>https://timo-juhani.github.io/logs/phased-approach-to-cisco-nso/</link>
+      <link>http://localhost:1313/logs/phased-approach-to-cisco-nso/</link>
       <pubDate>Wed, 12 Feb 2025 14:09:46 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/phased-approach-to-cisco-nso/</guid>
+      <guid>http://localhost:1313/logs/phased-approach-to-cisco-nso/</guid>
       <description>&lt;p&gt;First time is always the hardest. It helps if someone has already gone down the road and is ready to share their lessons learned.&lt;/p&gt;
 &lt;p&gt;Cisco NSO is a powerful network automation tool that can help network operations tremendously but is also known for a steep learning curve. This post aims to lay down an implementation pathway that enables fast wins and expands the scope gradually while avoiding overwhelming the engineering teams.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Nordnet Incident</title>
-      <link>https://timo-juhani.github.io/logs/nordnet-incident/</link>
+      <link>http://localhost:1313/logs/nordnet-incident/</link>
       <pubDate>Wed, 12 Feb 2025 08:05:12 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/nordnet-incident/</guid>
+      <guid>http://localhost:1313/logs/nordnet-incident/</guid>
       <description>&lt;p&gt;Yesterday around noon Nordnet received first messages about ongoing technical incident. In short, users were able to see other users stock accounts momentarily. The problem component according to Nordnet was a software component in login process. The remediation was to disable that component.&lt;/p&gt;
 &lt;p&gt;Starting from the first moment the issue was reported Nordnet has 72 hours to provide a recitation to authorities explaining the incident.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.nordnet.fi/faq/muut-aiheet/ongelmatilanteet/tietoa-teknisista-ongelmista-11-2-2025&#34;&gt;Nordnet Incident Report&lt;/a&gt;&lt;/p&gt;
@@ -53,9 +53,9 @@
     </item>
     <item>
       <title>NSO Cheatsheet</title>
-      <link>https://timo-juhani.github.io/logs/nso-cheatsheet/</link>
+      <link>http://localhost:1313/logs/nso-cheatsheet/</link>
       <pubDate>Thu, 12 Dec 2024 08:08:32 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/nso-cheatsheet/</guid>
+      <guid>http://localhost:1313/logs/nso-cheatsheet/</guid>
       <description>&lt;p&gt;The evolving summary of key NSO commands.&lt;/p&gt;
 &lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
 &lt;h3 id=&#34;local&#34;&gt;Local&lt;/h3&gt;
@@ -88,9 +88,9 @@ subdirectory of the running directory:&lt;/p&gt;</description>
     </item>
     <item>
       <title>RSHELLing With Defender Enabled</title>
-      <link>https://timo-juhani.github.io/logs/rshelling-with-defender-enabled/</link>
+      <link>http://localhost:1313/logs/rshelling-with-defender-enabled/</link>
       <pubDate>Wed, 11 Dec 2024 08:52:49 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/rshelling-with-defender-enabled/</guid>
+      <guid>http://localhost:1313/logs/rshelling-with-defender-enabled/</guid>
       <description>&lt;p&gt;When Microsoft Defender is enabled a way to bypass it is to execute the shell code by loading it to the memory. I found this technique interesting and worth saving for later use.&lt;/p&gt;
 &lt;h2 id=&#34;payload&#34;&gt;Payload&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Create payload with msfvenom
@@ -148,9 +148,9 @@ $thandle = [CrtThread]::CreateThread(0, 0, $addr, 0, 0, 0)
     </item>
     <item>
       <title>Cisco SDWAN and Air-Gapped ZTP Server</title>
-      <link>https://timo-juhani.github.io/logs/cisco-sdwan-air-gapped-ztp/</link>
+      <link>http://localhost:1313/logs/cisco-sdwan-air-gapped-ztp/</link>
       <pubDate>Fri, 04 Oct 2024 14:11:54 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/cisco-sdwan-air-gapped-ztp/</guid>
+      <guid>http://localhost:1313/logs/cisco-sdwan-air-gapped-ztp/</guid>
       <description>&lt;p&gt;This is a short after action report covering how to deploy an air-gapped ZTP server for Cisco SDWAN.&lt;/p&gt;
 &lt;p&gt;The motivation for this log is to fill in the gaps in other documentations and provide a step by step approach how to get to the end goal.&lt;/p&gt;
 &lt;h2 id=&#34;1-networking&#34;&gt;1. Networking&lt;/h2&gt;
@@ -158,9 +158,9 @@ $thandle = [CrtThread]::CreateThread(0, 0, $addr, 0, 0, 0)
     </item>
     <item>
       <title>THM: Retro</title>
-      <link>https://timo-juhani.github.io/logs/thm-retro/</link>
+      <link>http://localhost:1313/logs/thm-retro/</link>
       <pubDate>Mon, 02 Sep 2024 11:15:07 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/thm-retro/</guid>
+      <guid>http://localhost:1313/logs/thm-retro/</guid>
       <description>&lt;h2 id=&#34;initial-scans&#34;&gt;Initial Scans&lt;/h2&gt;
 &lt;h3 id=&#34;port-scan&#34;&gt;Port Scan&lt;/h3&gt;
 &lt;p&gt;Initial port scan showed open web and RDP ports. Based on the output below the system was detected to be a Windows host running IIS web server.&lt;/p&gt;
@@ -184,9 +184,9 @@ Nmap done: 1 IP address (1 host up) scanned in 30.31 seconds
     </item>
     <item>
       <title>THM: Mr Robot</title>
-      <link>https://timo-juhani.github.io/logs/thm-mr-robot/</link>
+      <link>http://localhost:1313/logs/thm-mr-robot/</link>
       <pubDate>Thu, 29 Aug 2024 13:08:59 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/thm-mr-robot/</guid>
+      <guid>http://localhost:1313/logs/thm-mr-robot/</guid>
       <description>&lt;p&gt;Can you root this Mr. Robot styled machine? This is a virtual machine meant for beginners/intermediate users. There are 3 hidden keys located on the machine, can you find them?&lt;/p&gt;
 &lt;h2 id=&#34;port-scan&#34;&gt;Port Scan&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nmap -sV 10.10.198.85
@@ -242,9 +242,9 @@ Progress: 14808 / 220561 (6.71%)
     </item>
     <item>
       <title>THM: Basic Pentesting</title>
-      <link>https://timo-juhani.github.io/logs/basic-pentesting/</link>
+      <link>http://localhost:1313/logs/basic-pentesting/</link>
       <pubDate>Wed, 28 Aug 2024 09:16:18 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/basic-pentesting/</guid>
+      <guid>http://localhost:1313/logs/basic-pentesting/</guid>
       <description>&lt;h2 id=&#34;port-scan&#34;&gt;Port Scan&lt;/h2&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nmap 10.10.29.172
 
@@ -266,9 +266,9 @@ MAC Address: 02:9B:BD:BC:6C:57 (Unknown)
     </item>
     <item>
       <title>THM: Pickle Rick</title>
-      <link>https://timo-juhani.github.io/logs/thm-pickle-rick/</link>
+      <link>http://localhost:1313/logs/thm-pickle-rick/</link>
       <pubDate>Fri, 16 Aug 2024 12:06:46 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/thm-pickle-rick/</guid>
+      <guid>http://localhost:1313/logs/thm-pickle-rick/</guid>
       <description>&lt;h2 id=&#34;task&#34;&gt;Task&lt;/h2&gt;
 &lt;p&gt;This Rick and Morty-themed challenge requires you to exploit a web server and find three ingredients to help Rick make his potion and transform himself back into a human from a pickle&lt;/p&gt;
 &lt;h2 id=&#34;enumeration&#34;&gt;Enumeration&lt;/h2&gt;
@@ -294,9 +294,9 @@ Nmap done: 1 IP address (1 host up) scanned in 8.65 seconds
     </item>
     <item>
       <title>THM: Upload Vulnerabilities Challenge</title>
-      <link>https://timo-juhani.github.io/logs/thm-upload-vulnerabilities-challenge/</link>
+      <link>http://localhost:1313/logs/thm-upload-vulnerabilities-challenge/</link>
       <pubDate>Fri, 16 Aug 2024 08:46:50 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/thm-upload-vulnerabilities-challenge/</guid>
+      <guid>http://localhost:1313/logs/thm-upload-vulnerabilities-challenge/</guid>
       <description>&lt;h2 id=&#34;task&#34;&gt;Task&lt;/h2&gt;
 &lt;p&gt;Head over to jewel.uploadvulns.thm.&lt;/p&gt;
 &lt;p&gt;Take what you&amp;rsquo;ve learned in this room and use it to get a shell on this machine. As per usual, your flag is in /var/www/. Bear in mind that this challenge will be an accumulation of everything you&amp;rsquo;ve learnt so far, so there may be multiple filters to bypass. The attached wordlist might help. Also remember that not all webservers have a PHP backend&amp;hellip;&lt;/p&gt;
@@ -305,17 +305,17 @@ Nmap done: 1 IP address (1 host up) scanned in 8.65 seconds
     </item>
     <item>
       <title>Blue Notes</title>
-      <link>https://timo-juhani.github.io/logs/blue-notes/</link>
+      <link>http://localhost:1313/logs/blue-notes/</link>
       <pubDate>Fri, 14 Jun 2024 20:13:26 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/blue-notes/</guid>
+      <guid>http://localhost:1313/logs/blue-notes/</guid>
       <description>&lt;p&gt;Have you ever tried to turn a serial link to a programming interface? Maybe not so listen. While it can be done I&amp;rsquo;m not sure if it&amp;rsquo;s a good idea.&lt;/p&gt;
 &lt;p&gt;The common starting for any new network is a bunch of dudes grabbing their blue Cisco console cables and going to work. Although PnP and zero touch provisioning protocols have become more common over the past years we&amp;rsquo;re not totally there yet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tools for the People</title>
-      <link>https://timo-juhani.github.io/logs/tools-for-the-people/</link>
+      <link>http://localhost:1313/logs/tools-for-the-people/</link>
       <pubDate>Fri, 14 Jun 2024 20:03:43 +0300</pubDate>
-      <guid>https://timo-juhani.github.io/logs/tools-for-the-people/</guid>
+      <guid>http://localhost:1313/logs/tools-for-the-people/</guid>
       <description>&lt;p&gt;How many times you have worked with networks that are outright insecure, vulnerable and unpatched?&lt;/p&gt;
 &lt;p&gt;How often do you hear any of these:
 a) We don&amp;rsquo;t have time to upgrade.
@@ -326,9 +326,9 @@ e) We didn&amp;rsquo;t know networks need to be patched.&lt;/p&gt;</description>
     </item>
     <item>
       <title>GCP: HTTP Load Balancer</title>
-      <link>https://timo-juhani.github.io/logs/gcp-http-load-balancer/</link>
+      <link>http://localhost:1313/logs/gcp-http-load-balancer/</link>
       <pubDate>Mon, 26 Feb 2024 12:02:24 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/gcp-http-load-balancer/</guid>
+      <guid>http://localhost:1313/logs/gcp-http-load-balancer/</guid>
       <description>&lt;p&gt;Earlier today I had an opportunity to setup and test a HTTP load balancer on Google Cloud Platform (GCP). I&amp;rsquo;m new to GCP and have only very limited hands-on experience on load balancers. Struggle was real. I try to explain it to myself next using the public documentation offered here as a skeleton:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/Qwiklearning/Challenge-lab/blob/main/GSP313%20Create%20and%20Manage%20Cloud%20Resources%3A%20Challenge%20Lab&#34;&gt;https://github.com/Qwiklearning/Challenge-lab/blob/main/GSP313%20Create%20and%20Manage%20Cloud%20Resources%3A%20Challenge%20Lab&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;compute&#34;&gt;Compute&lt;/h2&gt;
@@ -336,27 +336,27 @@ e) We didn&amp;rsquo;t know networks need to be patched.&lt;/p&gt;</description>
     </item>
     <item>
       <title>LTE on Starlink</title>
-      <link>https://timo-juhani.github.io/logs/lte-on-starlink/</link>
+      <link>http://localhost:1313/logs/lte-on-starlink/</link>
       <pubDate>Mon, 26 Feb 2024 09:18:32 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/lte-on-starlink/</guid>
+      <guid>http://localhost:1313/logs/lte-on-starlink/</guid>
       <description>&lt;p&gt;Sending and receiving LTE calls, messages and data without terrestrial LTE base stations is possible. Starlink has launched a service called Direct to Cell which works on any LTE handset. In their architecture the satellite works as an eNodeB which can be then integrated to a wider network and roaming partners.&lt;/p&gt;
 &lt;p&gt;This could be a start of something new. Time will tell.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.starlink.com/business/direct-to-cell&#34;&gt;https://www.starlink.com/business/direct-to-cell&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Immutable Data</title>
-      <link>https://timo-juhani.github.io/logs/immutable-data/</link>
+      <link>http://localhost:1313/logs/immutable-data/</link>
       <pubDate>Sun, 25 Feb 2024 15:11:08 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/immutable-data/</guid>
+      <guid>http://localhost:1313/logs/immutable-data/</guid>
       <description>&lt;p&gt;Although I&amp;rsquo;m not a coder by profession, I&amp;rsquo;ve been coding quite a bit during the recent months. While doing that I&amp;rsquo;ve tried to improve my coding principles.&lt;/p&gt;
 &lt;p&gt;I stumbled onto functional programming. While the concept is everything but new in 2024 I had not really looked into it if you don&amp;rsquo;t count in pure functions.&lt;/p&gt;
 &lt;p&gt;So the scenario is like this: In Python it&amp;rsquo;s quite common that you end up using data structures like a list of dictionaries as a defacto weapon of choice. And of course there is nothing wrong with that. In my cases however those have proven to be error-prone from time to time.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Internal Write Up</title>
-      <link>https://timo-juhani.github.io/logs/internal-write-up/</link>
+      <link>http://localhost:1313/logs/internal-write-up/</link>
       <pubDate>Wed, 14 Feb 2024 08:50:55 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/internal-write-up/</guid>
+      <guid>http://localhost:1313/logs/internal-write-up/</guid>
       <description>&lt;p&gt;Box: Internal&lt;br&gt;
 Platform: Try Hack Me&lt;br&gt;
 Grade: Hard&lt;/p&gt;
@@ -381,9 +381,9 @@ Nmap done: 1 IP address (1 host up) scanned in 9.57 seconds
     </item>
     <item>
       <title>Bare Minimum Git</title>
-      <link>https://timo-juhani.github.io/logs/bare-minimum-git/</link>
+      <link>http://localhost:1313/logs/bare-minimum-git/</link>
       <pubDate>Wed, 07 Feb 2024 17:38:04 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/bare-minimum-git/</guid>
+      <guid>http://localhost:1313/logs/bare-minimum-git/</guid>
       <description>&lt;p&gt;I had a recurring annoyance of running Gitlab instances in the lab. No matter whether I used Docker or just normal Gitlab instance at some point it broke or didn&amp;rsquo;t want to upgrade without grief. Frankly, I don&amp;rsquo;t have time to fix broken tools. Instead I need a hammer that is maintenance free. I got back to basics by implementing a bare minimum Git setup like this.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Server
 # Create a root folder for all projects
@@ -404,9 +404,9 @@ git push origin main
     </item>
     <item>
       <title>Upgrade Your Networks</title>
-      <link>https://timo-juhani.github.io/logs/upgrade-your-networks/</link>
+      <link>http://localhost:1313/logs/upgrade-your-networks/</link>
       <pubDate>Wed, 07 Feb 2024 09:17:41 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/upgrade-your-networks/</guid>
+      <guid>http://localhost:1313/logs/upgrade-your-networks/</guid>
       <description>&lt;p&gt;Patching your infrastructure is one of the best ways to have a huge impact on your security posture. While this is undebateble fact and while some organizations have this under control many still struggle to keep up with the emerging vulnerabilities.&lt;/p&gt;
 &lt;p&gt;As a response to an alarming state of how many networks still run unpatched and the growing number of network exploits I created this
 project called LAN Upgrade. As of today it&amp;rsquo;s capable of patching IOS-XE switches (and possibly routers -&amp;gt; needs to be tested) in mass and
@@ -414,9 +414,9 @@ in parallel saving a lot of time and money while reaching the objective of runni
     </item>
     <item>
       <title>Failing</title>
-      <link>https://timo-juhani.github.io/logs/failing/</link>
+      <link>http://localhost:1313/logs/failing/</link>
       <pubDate>Tue, 05 Dec 2023 20:03:29 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/failing/</guid>
+      <guid>http://localhost:1313/logs/failing/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s better to fail early than avoid the bitter taste of defeat until the
 very last moment. It&amp;rsquo;s common to lead a self-talk that is based on untested
 capabilities and knowledge. When combined imagination and lack of context create
@@ -430,9 +430,9 @@ performance comes easier when its needed. Know your limits and then expand them.
     </item>
     <item>
       <title>Windows Privesc Studies</title>
-      <link>https://timo-juhani.github.io/logs/windows-privesc-studies/</link>
+      <link>http://localhost:1313/logs/windows-privesc-studies/</link>
       <pubDate>Tue, 05 Dec 2023 15:06:09 +0200</pubDate>
-      <guid>https://timo-juhani.github.io/logs/windows-privesc-studies/</guid>
+      <guid>http://localhost:1313/logs/windows-privesc-studies/</guid>
       <description>&lt;p&gt;As part of the recent studies I&amp;rsquo;ve been trying to wrap my head around Windows
 privilege escalation techniques. Although the techniques are becoming more and
 more familiar by just doing repetitions theory plays a role as well. Therefore,
