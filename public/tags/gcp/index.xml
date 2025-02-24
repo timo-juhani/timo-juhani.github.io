@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Gcp on Logs</title>
-    <link>http://localhost:1313/tags/gcp/</link>
+    <link>https://timo-juhani.github.io/tags/gcp/</link>
     <description>Recent content in Gcp on Logs</description>
     <image>
       <title>Logs</title>
-      <url>http://localhost:1313/papermod-cover.png</url>
-      <link>http://localhost:1313/papermod-cover.png</link>
+      <url>https://timo-juhani.github.io/papermod-cover.png</url>
+      <link>https://timo-juhani.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Feb 2024 12:02:24 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gcp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://timo-juhani.github.io/tags/gcp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GCP: HTTP Load Balancer</title>
-      <link>http://localhost:1313/logs/gcp-http-load-balancer/</link>
+      <link>https://timo-juhani.github.io/logs/gcp-http-load-balancer/</link>
       <pubDate>Mon, 26 Feb 2024 12:02:24 +0200</pubDate>
-      <guid>http://localhost:1313/logs/gcp-http-load-balancer/</guid>
+      <guid>https://timo-juhani.github.io/logs/gcp-http-load-balancer/</guid>
       <description>&lt;p&gt;Earlier today I had an opportunity to setup and test a HTTP load balancer on Google Cloud Platform (GCP). I&amp;rsquo;m new to GCP and have only very limited hands-on experience on load balancers. Struggle was real. I try to explain it to myself next using the public documentation offered here as a skeleton:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/Qwiklearning/Challenge-lab/blob/main/GSP313%20Create%20and%20Manage%20Cloud%20Resources%3A%20Challenge%20Lab&#34;&gt;https://github.com/Qwiklearning/Challenge-lab/blob/main/GSP313%20Create%20and%20Manage%20Cloud%20Resources%3A%20Challenge%20Lab&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;compute&#34;&gt;Compute&lt;/h2&gt;

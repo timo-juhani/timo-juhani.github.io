@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -12,16 +12,16 @@ https://github.com/Qwiklearning/Challenge-lab/blob/main/GSP313%20Create%20and%20
 Compute
 It starts by creating an instance-template that can be used to replicate VMs that share the same configurations. The template here is a super basic one based on the requirements of GSP313 challenge.">
 <meta name="author" content="TJK">
-<link rel="canonical" href="http://localhost:1313/logs/gcp-http-load-balancer/">
+<link rel="canonical" href="https://timo-juhani.github.io/logs/gcp-http-load-balancer/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://timo-juhani.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://timo-juhani.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://timo-juhani.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://timo-juhani.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://timo-juhani.github.io/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/logs/gcp-http-load-balancer/">
+<link rel="alternate" hreflang="en" href="https://timo-juhani.github.io/logs/gcp-http-load-balancer/">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,7 +58,7 @@ It starts by creating an instance-template that can be used to replicate VMs tha
         }
 
     </style>
-</noscript><meta property="og:url" content="http://localhost:1313/logs/gcp-http-load-balancer/">
+</noscript><meta property="og:url" content="https://timo-juhani.github.io/logs/gcp-http-load-balancer/">
   <meta property="og:site_name" content="Logs">
   <meta property="og:title" content="GCP: HTTP Load Balancer">
   <meta property="og:description" content="Earlier today I had an opportunity to setup and test a HTTP load balancer on Google Cloud Platform (GCP). I’m new to GCP and have only very limited hands-on experience on load balancers. Struggle was real. I try to explain it to myself next using the public documentation offered here as a skeleton:
@@ -71,9 +71,9 @@ Compute It starts by creating an instance-template that can be used to replicate
     <meta property="article:modified_time" content="2024-02-26T12:02:24+02:00">
     <meta property="article:tag" content="Cloud">
     <meta property="article:tag" content="Gcp">
-      <meta property="og:image" content="http://localhost:1313/papermod-cover.png">
+      <meta property="og:image" content="https://timo-juhani.github.io/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/papermod-cover.png">
+<meta name="twitter:image" content="https://timo-juhani.github.io/papermod-cover.png">
 <meta name="twitter:title" content="GCP: HTTP Load Balancer">
 <meta name="twitter:description" content="Earlier today I had an opportunity to setup and test a HTTP load balancer on Google Cloud Platform (GCP). I&rsquo;m new to GCP and have only very limited hands-on experience on load balancers. Struggle was real. I try to explain it to myself next using the public documentation offered here as a skeleton:
 https://github.com/Qwiklearning/Challenge-lab/blob/main/GSP313%20Create%20and%20Manage%20Cloud%20Resources%3A%20Challenge%20Lab
@@ -90,13 +90,13 @@ It starts by creating an instance-template that can be used to replicate VMs tha
       "@type": "ListItem",
       "position":  1 ,
       "name": "Logs",
-      "item": "http://localhost:1313/logs/"
+      "item": "https://timo-juhani.github.io/logs/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "GCP: HTTP Load Balancer",
-      "item": "http://localhost:1313/logs/gcp-http-load-balancer/"
+      "item": "https://timo-juhani.github.io/logs/gcp-http-load-balancer/"
     }
   ]
 }
@@ -114,7 +114,7 @@ It starts by creating an instance-template that can be used to replicate VMs tha
   "articleBody": "Earlier today I had an opportunity to setup and test a HTTP load balancer on Google Cloud Platform (GCP). I’m new to GCP and have only very limited hands-on experience on load balancers. Struggle was real. I try to explain it to myself next using the public documentation offered here as a skeleton:\nhttps://github.com/Qwiklearning/Challenge-lab/blob/main/GSP313%20Create%20and%20Manage%20Cloud%20Resources%3A%20Challenge%20Lab\nCompute It starts by creating an instance-template that can be used to replicate VMs that share the same configurations. The template here is a super basic one based on the requirements of GSP313 challenge.\ncloud compute instance-templates create web-server-template \\ --metadata-from-file startup-script=startup.sh \\ --machine-type e2-medium Then let’s create a MIG or a managed instance group. MIG is for creating multiple indentical VMs that host the application. MIG comes with features that help to scale up or down the service or heal from an incident. In this load balancing excerise using a MIG is natural choice because we just want to replicate the same application on multiple VMs.\ngcloud compute instance-groups managed create lb-backend-group \\ --size 2 \\ --template web-server-template Firewall rule to allow HTTP traffic is required. Opening port 80 for all backend VMs to punch a hole for the incoming web traffic. Frankly, it’s quite a huge hole for it allows all sources to chat with out web VMs. Which might be bad.. or not depending on the application.\ngcloud compute firewall-rules create web-server-firewall \\ --allow tcp:80 \\ That gives us the settings for two web VMs. To pool them together we need a load balancer. Otherwise publishing the application consisting of multiple VMs behind a single endpoint becomes quite a engineering task. In this case HTTP load balancer is used instead of network load balancer (NLB) which is another common option. If we opted for using an NLB we could only distribute the traffic based on IP and TCP port which might not give enough flexibility in the long run. If the application was super simple an NLB might be an option as well.\nLoad Balancing Health check is enabled so that we can determine whether the backend VMs respond to traffic correctly. Without health checks there wouldn’t be a mechanism for the load balancer to know which VM instances are doing ok. A broken instance could be a potential traffic black hole. That’s why we start by defining that object first.\nBackend gcloud compute http-health-checks create http-basic-check Modify the previously created MIG by assigning named ports. The configuration below assigns the name HTTP for port 80. This is an indication that HTTP service runs in all instances of MIG called lb-backend-group.\ngcloud compute instance-groups managed \\ set-named-ports lb-backend-group \\ --named-ports http:80 Create a backend service for the web servers. A backend service defines how to distribute the traffic to the two web servers. Adding to the backend service assigns our web servers to the load balancer. In this case the servers were defined by using an instance group. In other words there are two identical web servers behding the load balancer, they offer services using HTTP protocol and are monitored by the load balancer by a health check.\n# Backend service with a health check. gcloud compute backend-services create web-server-backend \\ --protocol HTTP \\ --http-health-checks http-basic-check \\ --global # Adding the web server instance-group to the backend service. gcloud compute backend-services add-backend web-server-backend \\ --instance-group lb-backend-group \\ --global Frontend URL map is created to route the incoming requests to the default backend service. In effect this is routing of web requests to their corresponding backend services. The target proxy configuration enables the termination of incoming client connections at the load balancer frontend while creating new connections from load balancer backend to the web servers. Putting URL map and target proxy settings together allows a way to connect clients’ HTTP requests via proxy to the individual web server.\n# URL map gcloud compute url-maps create web-server-map \\ --default-service web-server-backend # Proxy gcloud compute target-http-proxies create http-lb-proxy \\ --url-map web-server-map Forwarding rule is created to direct the traffic to a load balancer which was defined above. In this case all traffic arriving to HTTP port will be forwarded to the load balancer which will then route the incoming web requests to the web servers.\ngcloud compute forwarding-rules create http-content-rule \\ --global \\ --target-http-proxy http-lb-proxy \\ --ports 80 Lessons learned: Understanding what you do is the most important. And for that reason the lack of my load balancing knowledge really turned this one into a mind bender for a moment. Don’t go forward until you understand. ",
   "wordCount" : "750",
   "inLanguage": "en",
-  "image": "http://localhost:1313/papermod-cover.png","datePublished": "2024-02-26T12:02:24+02:00",
+  "image": "https://timo-juhani.github.io/papermod-cover.png","datePublished": "2024-02-26T12:02:24+02:00",
   "dateModified": "2024-02-26T12:02:24+02:00",
   "author":{
     "@type": "Person",
@@ -122,14 +122,14 @@ It starts by creating an instance-template that can be used to replicate VMs tha
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/logs/gcp-http-load-balancer/"
+    "@id": "https://timo-juhani.github.io/logs/gcp-http-load-balancer/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Logs",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://timo-juhani.github.io/favicon.ico"
     }
   }
 }
@@ -151,7 +151,7 @@ It starts by creating an instance-template that can be used to replicate VMs tha
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Logs (Alt + H)">Logs</a>
+            <a href="https://timo-juhani.github.io/" accesskey="h" title="Logs (Alt + H)">Logs</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -177,17 +177,17 @@ It starts by creating an instance-template that can be used to replicate VMs tha
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/archives" title="Archive">
+                <a href="https://timo-juhani.github.io/archives" title="Archive">
                     <span>Archive</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://timo-juhani.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://timo-juhani.github.io/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -198,7 +198,7 @@ It starts by creating an instance-template that can be used to replicate VMs tha
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/logs/">Logs</a></div>
+    <div class="breadcrumbs"><a href="https://timo-juhani.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://timo-juhani.github.io/logs/">Logs</a></div>
     <h1 class="post-title entry-hint-parent">
       GCP: HTTP Load Balancer
     </h1>
@@ -290,16 +290,16 @@ gcloud compute target-http-proxies create http-lb-proxy \
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/cloud/">Cloud</a></li>
-      <li><a href="http://localhost:1313/tags/gcp/">Gcp</a></li>
+      <li><a href="https://timo-juhani.github.io/tags/cloud/">Cloud</a></li>
+      <li><a href="https://timo-juhani.github.io/tags/gcp/">Gcp</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/logs/tools-for-the-people/">
+  <a class="prev" href="https://timo-juhani.github.io/logs/tools-for-the-people/">
     <span class="title">« Prev</span>
     <br>
     <span>Tools for the People</span>
   </a>
-  <a class="next" href="http://localhost:1313/logs/lte-on-starlink/">
+  <a class="next" href="https://timo-juhani.github.io/logs/lte-on-starlink/">
     <span class="title">Next »</span>
     <br>
     <span>LTE on Starlink</span>
@@ -310,7 +310,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
 <ul class="share-buttons">
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share GCP: HTTP Load Balancer on x"
-            href="https://x.com/intent/tweet/?text=GCP%3a%20HTTP%20Load%20Balancer&amp;url=http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f&amp;hashtags=cloud%2cgcp">
+            href="https://x.com/intent/tweet/?text=GCP%3a%20HTTP%20Load%20Balancer&amp;url=https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f&amp;hashtags=cloud%2cgcp">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -319,7 +319,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share GCP: HTTP Load Balancer on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f&amp;title=GCP%3a%20HTTP%20Load%20Balancer&amp;summary=GCP%3a%20HTTP%20Load%20Balancer&amp;source=http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f">
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f&amp;title=GCP%3a%20HTTP%20Load%20Balancer&amp;summary=GCP%3a%20HTTP%20Load%20Balancer&amp;source=https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
@@ -328,7 +328,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share GCP: HTTP Load Balancer on reddit"
-            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f&title=GCP%3a%20HTTP%20Load%20Balancer">
+            href="https://reddit.com/submit?url=https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f&title=GCP%3a%20HTTP%20Load%20Balancer">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
@@ -337,7 +337,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share GCP: HTTP Load Balancer on facebook"
-            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f">
+            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
@@ -346,7 +346,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share GCP: HTTP Load Balancer on whatsapp"
-            href="https://api.whatsapp.com/send?text=GCP%3a%20HTTP%20Load%20Balancer%20-%20http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f">
+            href="https://api.whatsapp.com/send?text=GCP%3a%20HTTP%20Load%20Balancer%20-%20https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
@@ -355,7 +355,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share GCP: HTTP Load Balancer on telegram"
-            href="https://telegram.me/share/url?text=GCP%3a%20HTTP%20Load%20Balancer&amp;url=http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f">
+            href="https://telegram.me/share/url?text=GCP%3a%20HTTP%20Load%20Balancer&amp;url=https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f">
             <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
@@ -364,7 +364,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
     </li>
     <li>
         <a target="_blank" rel="noopener noreferrer" aria-label="share GCP: HTTP Load Balancer on ycombinator"
-            href="https://news.ycombinator.com/submitlink?t=GCP%3a%20HTTP%20Load%20Balancer&u=http%3a%2f%2flocalhost%3a1313%2flogs%2fgcp-http-load-balancer%2f">
+            href="https://news.ycombinator.com/submitlink?t=GCP%3a%20HTTP%20Load%20Balancer&u=https%3a%2f%2ftimo-juhani.github.io%2flogs%2fgcp-http-load-balancer%2f">
             <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
                 <path
@@ -379,7 +379,7 @@ gcloud compute target-http-proxies create http-lb-proxy \
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="http://localhost:1313/">Logs</a></span> · 
+        <span>&copy; 2025 <a href="https://timo-juhani.github.io/">Logs</a></span> · 
 
     <span>
         Powered by
