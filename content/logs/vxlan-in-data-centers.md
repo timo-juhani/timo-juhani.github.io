@@ -19,7 +19,7 @@ Time to get hands on.
 
 Typical CLOS topology. 
 
-[](/images/clos-fabric-bgp.png)
+![Topology](/images/clos-fabric-bgp.png)
 
 ## Configuration
 
